@@ -1,0 +1,56 @@
+/* =====================================================================
+   THVC Fund — v10 · tokens.css — BIẾN THIẾT KẾ DÙNG CHUNG (một nguồn duy nhất)
+   Màu, font, độ rộng, cỡ chữ co giãn: lấy nguyên văn từ v09 (đã duyệt).
+   Đổi giá trị ở đây → toàn site đổi theo.
+   ===================================================================== */
+/* ===== Nhận diện THVC Fund — màu đo từ file logo gốc ===== */
+:root{
+  --navy:#172743;      /* nền logo */
+  --navy-2:#1E3354;
+  --navy-3:#0F1B30;
+  --gold:#F0C15F;      /* đồng tiền */
+  --gold-2:#D9A83F;
+  --green:#0E6653;     /* dải lúa */
+  --green-2:#0B5244;
+  --ivory:#F7F3EA;
+  --paper:#FFFFFF;
+  --ink:#172743;
+  --muted:#5A6478;
+  --line:rgba(23,39,67,.12);
+  --on-navy:#E9EDF4;
+  --on-navy-muted:#A9B3C6;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --heading:"Be Vietnam Pro","Montserrat","Segoe UI",Roboto,Arial,sans-serif;  /* tiêu đề (Human chốt 11/11/2026) */
+  --body:"Montserrat","Segoe UI",Roboto,Arial,sans-serif;
+  --wrap:1180px;
+  --gutter:16px;
+}
+@media (min-width:720px){:root{--gutter:32px}}
+
+/* Thang cỡ chữ co giãn (v09 · v07) */
+/* Chuẩn kiểm: khung nhìn 1536×690 (laptop 15,2" phóng 125%). Chữ và đệm co theo cả chiều rộng lẫn chiều cao */
+:root{
+  --pad-sec:clamp(40px,7vh,72px);      /* đệm trên/dưới mỗi khối */
+  --t-h2:clamp(28px,min(3vw,6vh),42px);  /* tiêu đề khối */
+  --t-num:clamp(32px,min(3.2vw,6.4vh),48px); /* số lớn */
+  --t-card:clamp(16px,1.25vw,19px);    /* tên trong thẻ */
+  --t-idx:clamp(17px,1.3vw,20px);      /* số thứ tự trong thẻ */
+}
+
+/* Bổ sung v10 — giá trị lấy từ các mã màu/kích thước v09 đang dùng trực tiếp */
+:root{
+  --gold-hover:#F6CF7C;                 /* v09: nút vàng khi rê chuột */
+  --ink-2:#2B3A55;                      /* chữ đoạn dài trong bài viết */
+  --line-strong:rgba(23,39,67,.20);
+  --line-input:rgba(23,39,67,.22);
+  --gold-line:rgba(240,193,95,.22);     /* v09: viền vàng mảnh */
+  --gold-line-strong:rgba(240,193,95,.5);
+  --gold-tint:rgba(240,193,95,.10);
+  --gold-tint-strong:rgba(240,193,95,.35);
+  --radius:14px;                        /* v09: thẻ nhỏ */
+  --radius-lg:18px;                     /* v09: thẻ lớn */
+  --shadow:0 18px 40px rgba(23,39,67,.10);   /* v09: thẻ khi rê chuột */
+  --shadow-dark:0 18px 40px rgba(0,0,0,.35);
+  --hdr-h:76px;                         /* v09: chiều cao header */
+  --danger:#B3261E; --danger-bg:#FBEAEA; --danger-ink:#7A1A14; --ok-bg:#E7F3EF;
+}

@@ -1,0 +1,140 @@
+/* =====================================================================
+   THVC Fund — v10 · type-scale.css — THANG CỠ CHỮ
+   R20 (Human 11/11/2026): MỌI màn hình — chữ thường (không đậm, không in hoa)
+       = cỡ v09 + 4px. Chữ ĐẬM hoặc IN HOA giữ nguyên cỡ v09.
+   R14 + góp ý #8: riêng điện thoại (< 720px) — chữ đậm/in hoa cũng +1px,
+       chữ nhỏ nhất 13px, ô nhập liệu 16px (tránh iOS tự phóng to).
+   Tiêu đề lớn giữ nguyên (đã co giãn bằng clamp trong base/tokens).
+   Mục 3 (Human 11/11/2026): điện thoại — chữ thường = cỡ máy tính − 2px (chuẩn iOS/Android).
+   Đổi cỡ chữ nội dung toàn site: sửa file này.
+   ===================================================================== */
+
+/* ===== 1. MỌI MÀN HÌNH — chữ thường: cỡ v09 + 4px ===== */
+/* Giao diện v09 (chú thích: cỡ v09 → v10) */
+body{font-size:20px}                                   /* 16 → 20 */
+.hero .lead{font-size:18.5px}                          /* 14.5 → 18.5 */
+.stat .lbl{font-size:18px}                             /* 13 → 18 (góp ý #9: to hơn) */
+.stat .src{font-size:15px}                             /* 11 → 15 */
+.sec .lead2,.eco-lead{font-size:19px}                  /* 15 → 19 */
+.principles li{font-size:19px}                         /* 15 → 19 */
+.party .role{font-size:18px}                           /* 14 → 18 */
+.th-grid .lbl{font-size:17px}                          /* 13 → 17 */
+.photo .note,.th .note{font-size:16px}                 /* 12 → 16 */
+.steps-note{font-size:16.5px}                          /* 12.5 → 16.5 */
+.support span,.miles p{font-size:17.5px}               /* 13.5 → 17.5 */
+.rule,.note-box,.targets div{font-size:18px}           /* 14 → 18 */
+.eco-item span{font-size:16.5px}                       /* 12.5 → 16.5 */
+/* Footer — 4 cỡ, mỗi cỡ một vai trò (Human 11/11/2026) */
+.ftr{font-size:16px}                                   /* nội dung: trụ sở, mã số, website */
+.ftr-name strong{font-size:17px}                       /* tên công ty */
+.ftr .en{font-size:13px}                               /* tên tiếng Anh */
+.warn{font-size:14px}                                  /* cảnh báo mạo danh, một dòng nhạt */
+.ftr-brand .copy{font-size:14px}                       /* © bản quyền, dưới logo */
+/* Thành phần v10 (cỡ gốc thiết kế → +4) */
+.crumbs{font-size:17px}
+.phdr .lead{font-size:20px}
+.demo-note{font-size:17.5px}
+.meta{font-size:17px}
+.sum p,.ncard p{font-size:18.5px}
+.slide p{font-size:19px}
+.fsearch input{font-size:18px}
+.count{font-size:17px}
+.doc .date{font-size:17px}
+.keypts{font-size:19px}
+.article p{font-size:20.5px}
+.article figcaption{font-size:17px}
+.agenda li{font-size:19.5px}
+.guide li{font-size:18.5px}
+.fld input,.fld textarea{font-size:19px}
+.hint{font-size:17px}
+.check{font-size:18.5px}
+.faq details p{font-size:19px}
+.org span{font-size:18px}
+.mission p{font-size:21px}
+main small{font-size:max(13px,.82em)}
+.prose li{font-size:18.5px}                             /* khuôn K1: danh sách */
+.prose table{font-size:17px}                           /* khuôn K1: bảng */
+.side-nav a{font-size:16px}
+.article .share{font-size:18px}                        /* 14 → 18 */
+.fs .fs-note{font-size:18px}                           /* 14 → 18 */
+.law dl{font-size:16px}                                /* nhãn + giá trị thẻ văn bản pháp lý (giá trị in đậm) */
+/* Menu (Human 11/11/2026: +2px) */
+.nt,.nav .sub-menu a{font-size:16px}                    /* 14 → 16 */
+
+/* ===== 2. RIÊNG ĐIỆN THOẠI (< 720px) — chữ đậm / in hoa / menu ===== */
+@media (max-width:719px){
+  .eyebrow{font-size:13px}
+  .party .tags span{font-size:13px}
+  .chip,.dd span,.open span{font-size:14px}
+  .flow li{font-size:15px}
+  .screen b{font-size:15px}
+  .eco-item b{font-size:15px}
+  .nt{font-size:19px}
+  .nav .sub-menu a{font-size:18px}
+  .tag{font-size:12.5px}
+  .demo{font-size:11.5px}
+  .sum .more{font-size:15px}
+  .fchip{font-size:14px}
+  .fselect,.fld select{font-size:16px}
+  .doc h3{font-size:17px}
+  .doc .no{font-size:14px}
+  .guide li b{font-size:16px}
+  .fld label,.fld .lbl{font-size:15px}
+  .err{font-size:14px}
+  .clist b{font-size:17px}
+  .clist small{font-size:12.5px}
+  .socials a{font-size:15px}
+  .faq summary{font-size:17px}
+  .facts dd{font-size:16.5px}
+  .facts dt{font-size:12.5px}
+  .info-list dd{font-size:16px}
+  .side-box h2{font-size:13px}
+  /* Nhãn chữ hoa nhỏ: tối thiểu 13px */
+  .ftr h4,.act-side .side-h,.dbadge span,.sum .k,.mission .lbl,.facts dt,.party .who2,.subh,.eco .sub,.chip i,.evd span,
+  .keypts b,.info-list dt,.tag,.demo,.next small,.clist small{font-size:13px}
+  .miles .big small{font-size:13px}
+}
+
+/* ===== 3. ĐIỆN THOẠI (< 720px) — chữ thường theo chuẩn iOS/Android (Human chốt 11/11/2026) =====
+   Nội dung chính 18px (iOS Body 17pt, Android Body Large 16sp); = cỡ máy tính − 2px.
+   Ô nhập ≥ 16px; chữ nhỏ nhất 13px; footer giữ cỡ riêng. */
+@media (max-width:719px){
+  body{font-size:18px}
+  .hero .lead{font-size:16.5px}
+  .stat .lbl{font-size:16px}
+  .stat .src{font-size:13px}
+  .sec .lead2,.eco-lead{font-size:17px}
+  .principles li{font-size:17px}
+  .party .role{font-size:16px}
+  .th-grid .lbl{font-size:15px}
+  .photo .note,.th .note{font-size:14px}
+  .steps-note{font-size:14.5px}
+  .support span,.miles p{font-size:15.5px}
+  .rule,.note-box,.targets div{font-size:16px}
+  .eco-item span{font-size:14.5px}
+  .crumbs{font-size:15px}
+  .phdr .lead{font-size:18px}
+  .demo-note{font-size:15.5px}
+  .meta{font-size:15px}
+  .sum p,.ncard p{font-size:16.5px}
+  .slide p{font-size:17px}
+  .fsearch input{font-size:16px}
+  .count{font-size:15px}
+  .doc .date{font-size:15px}
+  .keypts{font-size:17px}
+  .article p{font-size:18.5px}
+  .article figcaption{font-size:15px}
+  .agenda li{font-size:17.5px}
+  .guide li{font-size:16.5px}
+  .fld input,.fld textarea{font-size:17px}
+  .hint{font-size:15px}
+  .check{font-size:16.5px}
+  .faq details p{font-size:17px}
+  .org span{font-size:16px}
+  .mission p{font-size:19px}
+  .article .share{font-size:16px}
+  .fs .fs-note{font-size:16px}
+  .law dl{font-size:14px}
+  .prose li{font-size:16.5px}
+  .prose table{font-size:15px}
+}

@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Style guide · THVC Fund</title>
+<meta name="description" content="Hệ thống thiết kế THVC Fund v10: màu, chữ, nút, nhãn, thành phần và mốc responsive. Trang tham chiếu cho dev.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Style guide · THVC Fund">
+<meta property="og:description" content="Hệ thống thiết kế THVC Fund v10: màu, chữ, nút, nhãn, thành phần và mốc responsive. Trang tham chiếu cho dev.">
+<meta property="og:image" content="assets/img/logo-bieu-tuong.png">
+<link rel="icon" type="image/png" href="assets/img/logo-bieu-tuong.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Be+Vietnam+Pro:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap">
+<!-- Thứ tự CSS: biến → giao diện v09 → thành phần v10 → thang cỡ chữ -->
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/type-scale.css">
+</head>
+<body class="subpage">
+
+<!-- ▼ DÙNG CHUNG: HEADER · bản gốc: partials/header.html · dùng ở: mọi trang (dev: include, không chép tay) -->
+<a class="skip" href="#main">Bỏ qua tới nội dung chính</a>
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="THVC Fund — Trang chủ"><img src="assets/img/logo-ngang.png" alt="THVC Fund — Quỹ Đầu tư mạo hiểm tỉnh Thanh Hóa" width="167" height="50"></a>
+    <nav class="nav" id="nav" aria-label="Điều hướng chính">
+    <ul class="nav-list">
+      <li class="ni has-sub">
+        <button class="nt" type="button" aria-expanded="false" aria-controls="sm-1">Về THVC <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        <ul class="sub-menu" id="sm-1">
+          <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+          <li><a href="mo-hinh.html">Mô hình</a></li>
+          <li><a href="he-sinh-thai.html">Hệ sinh thái</a></li>
+        </ul>
+      </li>
+      <li class="ni has-sub">
+        <button class="nt" type="button" aria-expanded="false" aria-controls="sm-2">Đầu tư <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        <ul class="sub-menu" id="sm-2">
+          <li><a href="linh-vuc.html">Lĩnh vực</a></li>
+          <li><a href="quy-trinh.html">Quy trình</a></li>
+          <li><a href="lo-trinh.html">Lộ trình</a></li>
+        </ul>
+      </li>
+      <li class="ni has-sub">
+        <button class="nt" type="button" aria-expanded="false" aria-controls="sm-3">Công bố thông tin <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        <ul class="sub-menu" id="sm-3">
+          <li><a href="cong-bo-thong-tin.html">Công bố của Quỹ</a></li>
+          <li><a href="van-ban-phap-ly.html">Văn bản pháp lý</a></li>
+        </ul>
+      </li>
+      <li class="ni has-sub">
+        <button class="nt" type="button" aria-expanded="false" aria-controls="sm-4">Hoạt động <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        <ul class="sub-menu" id="sm-4">
+          <li><a href="tin-tuc.html">Tin tức</a></li>
+          <li><a href="su-kien.html">Sự kiện</a></li>
+        </ul>
+      </li>
+      <li class="ni"><a class="nt" href="lien-he.html">Liên hệ</a></li>
+    </ul>
+    </nav>
+    <div class="hdr-actions">
+      <a class="btn btn-gold" href="dang-ky.html"><span class="lbl-full">Đề xuất đầu tư</span><span class="lbl-short">Gửi hồ sơ</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <button class="nav-toggle" type="button" aria-controls="nav" aria-expanded="false" aria-label="Mở menu"><svg class="i-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+  </div>
+</header>
+<!-- ▲ HẾT DÙNG CHUNG: HEADER -->
+
+<main id="main">
+
+<!-- ▼ THÀNH PHẦN: ĐẦU TRANG CON -->
+<section class="phdr">
+  <div class="wrap">
+    <nav aria-label="Đường dẫn"><ol class="crumbs"><li><a href="index.html">Trang chủ</a></li><li><span aria-current="page">Style guide</span></li></ol></nav>
+    <p class="eyebrow">Dành cho dev</p>
+    <h1 class="display">Style guide v10</h1>
+    <p class="lead">Mọi thành phần dùng chung một hệ thống: biến ở tokens.css, giao diện v09 ở base.css, thành phần mới ở components.css, thang cỡ chữ ở type-scale.css.</p>
+  </div>
+</section>
+<!-- ▲ HẾT: ĐẦU TRANG CON -->
+
+<!-- ▼ THÀNH PHẦN: STYLE GUIDE -->
+<section class="sec white" aria-label="Style guide">
+  <div class="wrap">
+    <div class="sg-block" style="margin-top:0"><h2>Màu</h2><p class="hint">Nguồn: tokens.css (đo từ logo gốc, giữ nguyên v09).</p><div class="sg-grid">
+      <div class="sw"><i style="background:var(--navy)"></i><div><b>Nền chính, chữ tiêu đề</b><code>--navy · #172743</code></div></div>
+      <div class="sw"><i style="background:var(--navy-2)"></i><div><b>Nền phụ</b><code>--navy-2 · #1E3354</code></div></div>
+      <div class="sw"><i style="background:var(--navy-3)"></i><div><b>Nền tối</b><code>--navy-3 · #0F1B30</code></div></div>
+      <div class="sw"><i style="background:var(--gold)"></i><div><b>Nhấn, nút chính</b><code>--gold · #F0C15F</code></div></div>
+      <div class="sw"><i style="background:var(--gold-2)"></i><div><b>Nhấn trên nền sáng</b><code>--gold-2 · #D9A83F</code></div></div>
+      <div class="sw"><i style="background:var(--green)"></i><div><b>Nhãn, liên kết</b><code>--green · #0E6653</code></div></div>
+      <div class="sw"><i style="background:var(--green-2)"></i><div><b>Xanh đậm</b><code>--green-2 · #0B5244</code></div></div>
+      <div class="sw"><i style="background:var(--ivory)"></i><div><b>Nền khối sáng</b><code>--ivory · #F7F3EA</code></div></div>
+      <div class="sw"><i style="background:var(--paper)"></i><div><b>Nền thẻ</b><code>--paper · #FFFFFF</code></div></div>
+      <div class="sw"><i style="background:var(--muted)"></i><div><b>Chữ phụ</b><code>--muted · #5A6478</code></div></div>
+      <div class="sw"><i style="background:var(--on-navy)"></i><div><b>Chữ trên nền navy</b><code>--on-navy · #E9EDF4</code></div></div>
+      <div class="sw"><i style="background:var(--on-navy-muted)"></i><div><b>Chữ phụ trên navy</b><code>--on-navy-muted · #A9B3C6</code></div></div>
+    </div></div>
+    <div class="sg-block"><h2>Chữ</h2><p class="hint">Tiêu đề: Be Vietnam Pro 600, chữ thường. Con số lớn: Barlow Condensed 800. Nội dung: Montserrat 400–700. Chữ thường = cỡ v09 + 4px trên máy tính (đoạn văn 20px), trên điện thoại thấp hơn 2px theo chuẩn iOS/Android (đoạn văn 18px); chữ đậm, in hoa giữ cỡ v09 (riêng điện thoại cũng tăng ~1px); chữ nhỏ nhất trên điện thoại 13px.</p>
+      <p class="eyebrow" style="color:var(--green);margin-top:18px">Eyebrow · 12px / 13px mobile</p>
+      <h1 class="display" style="font-size:clamp(34px,min(4.4vw,7vh),60px);color:var(--navy)">Tiêu đề trang H1</h1>
+      <h2 class="display" style="font-size:var(--t-h2);color:var(--navy)">Tiêu đề khối H2</h2>
+      <h3 style="font-family:var(--heading);font-weight:600;font-size:20px;color:var(--navy);margin:8px 0">Tên trong thẻ H3</h3>
+      <p style="max-width:720px">Đoạn văn · Montserrat 20px, dòng 1.65. Đây là cỡ chữ nội dung mặc định của toàn site.</p>
+      <p class="hint">Chữ phụ / ghi chú · 17px</p>
+    </div>
+    <div class="sg-block"><h2>Nút</h2><div class="sg-row">
+      <a class="btn btn-gold" href="#">Nút chính <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-navy" href="#">Nút navy</a><a class="btn btn-ghost" href="#">Nút viền</a><a class="btn btn-gold btn-sm" href="#">Nút nhỏ</a>
+      <span style="background:var(--navy);padding:12px;border-radius:14px"><a class="btn btn-line" href="#">Nút viền trên nền tối</a></span>
+    </div></div>
+    <div class="sg-block"><h2>Nhãn và đánh dấu</h2><div class="sg-row">
+      <span class="tag">Nhãn vàng</span><span class="tag g">Nhãn xanh</span><span class="tag n">Nhãn navy</span><span class="tag o">Nhãn viền</span>
+      <span class="demo">Mẫu</span><span class="demo">Demo</span><i class="ph">Ô chờ nội dung</i>
+      <span class="chip"><i>01</i>Thẻ con nhộng</span>
+    </div><p class="hint" style="margin-top:12px">"Mẫu"/"Demo": dữ liệu minh họa. Ô viền đứt: chờ Quỹ cung cấp. Dev/Admin thay trước khi phát hành.</p></div>
+    <div class="sg-block"><h2>Ô nhập liệu</h2><div class="fgrid" style="max-width:760px;margin-top:16px">
+      <div class="fld"><label for="sg1">Ô thường</label><input id="sg1" type="text" placeholder="Gợi ý"><span class="hint">Chú thích</span></div>
+      <div class="fld invalid"><label for="sg2">Ô báo lỗi</label><input id="sg2" type="text"><span class="err">Thông báo lỗi</span></div>
+    </div></div>
+    <div class="sg-block"><h2>Mốc responsive</h2><p>Kiểm tra ở 360 · 390 · 768 · 1024 · 1440 px. Mốc CSS: 520 · 600 · 720 · 880 · 980 · 1080 · 1100 (menu đầy đủ) · 1180 px. Cỡ chữ riêng điện thoại: dưới 720 px.</p></div>
+    <div class="sg-block"><h2>Danh mục thành phần</h2><div class="sg-scroll"><table class="sg-table"><thead><tr><th>Thành phần</th><th>Dùng ở</th><th>Mã nguồn</th></tr></thead><tbody>
+<tr><td>Khuôn K1 "Trang nội dung": bài viết (tiêu đề phụ, đoạn văn, danh sách, danh sách đánh số, bảng, trích dẫn, ảnh đầu bài) + cột phụ "Trong mục này"</td><td>Giới thiệu, Mô hình, Lĩnh vực, Quy trình, Lộ trình, Chính sách</td><td><code>components.css .prose .two-col .page-side .side-nav</code></td></tr>
+<tr><td>Header + menu 5 mục, sub menu, hamburger</td><td>Mọi trang</td><td><code>components.css · .hdr .nav .ni .sub-menu .nav-toggle</code></td></tr>
+<tr><td>Footer: logo + tên công ty + 3 cột thông tin</td><td>Mọi trang</td><td><code>base.css .ftr + components.css .ftr-info .ftr-name .ftr-facts</code></td></tr>
+<tr><td>Nút lên đầu trang</td><td>Mọi trang (chỉ máy tính)</td><td><code>base.css .to-top</code></td></tr>
+<tr><td>Đầu trang con + đường dẫn</td><td>Mọi trang con</td><td><code>components.css .phdr .crumbs</code></td></tr>
+<tr><td>Hero Trang chủ + dải số liệu</td><td>index</td><td><code>base.css .hero .stats</code></td></tr>
+<tr><td>Hoạt động mới nhất: 2 thẻ nổi bật + cột "mới nhất" (khối bật/tắt)</td><td>index, Tin tức, Sự kiện</td><td><code>components.css .act-grid .act-feat .act-side</code></td></tr>
+<tr><td>Thẻ tóm tắt</td><td>index</td><td><code>components.css .sum</code></td></tr>
+<tr><td>Dải Tiếp theo</td><td>Trang nội dung</td><td><code>components.css .next</code></td></tr>
+<tr><td>Khối thiết kế v09 (hero, dải số liệu)</td><td>Chỉ Trang chủ</td><td><code>base.css (nguyên văn v09)</code></td></tr>
+<tr><td>Bộ lọc + tìm kiếm</td><td>Công bố, Văn bản, Tin tức, Sự kiện</td><td><code>components.css .filters · main.js mục 5</code></td></tr>
+<tr><td>Thẻ tin, thẻ sự kiện (khối ngày), phân trang</td><td>Tin tức</td><td><code>components.css .news .ncard .pager</code></td></tr>
+<tr><td>Bài chi tiết + cột phụ</td><td>Tin chi tiết, Sự kiện chi tiết</td><td><code>components.css .article .two-col .side-box</code></td></tr>
+<tr><td>Danh sách sự kiện</td><td>Sự kiện</td><td><code>components.css .ev .evi</code></td></tr>
+<tr><td>Danh sách văn bản công bố</td><td>Công bố thông tin</td><td><code>components.css .docs .doc</code></td></tr>
+<tr><td>Thẻ văn bản pháp lý + tóm tắt</td><td>Văn bản pháp lý</td><td><code>components.css .laws .law .keypts</code></td></tr>
+<tr><td>Form 6 phần + hướng dẫn</td><td>Đề xuất đầu tư</td><td><code>components.css .form-wrap .fs .fld · main.js mục 6</code></td></tr>
+<tr><td>Kênh liên hệ, mạng xã hội, bản đồ</td><td>Liên hệ</td><td><code>components.css .contact .ccard .socials .map</code></td></tr>
+<tr><td>Hỏi đáp</td><td>Liên hệ</td><td><code>components.css .faq</code></td></tr>
+<tr><td>Thông tin pháp nhân, bộ máy</td><td>Giới thiệu</td><td><code>components.css .facts .org .mission</code></td></tr>
+    </tbody></table></div><p class="hint" style="margin-top:12px">Trong HTML, mỗi thành phần nằm giữa chú thích <code>&lt;!-- ▼ THÀNH PHẦN: … --&gt;</code> và <code>&lt;!-- ▲ HẾT: … --&gt;</code>; phần admin cập nhật ghi ngay trong chú thích mở.</p></div>
+  </div>
+</section>
+<!-- ▲ HẾT: STYLE GUIDE -->
+
+</main>
+
+<!-- ▼ DÙNG CHUNG: FOOTER · bản gốc: partials/footer.html · dùng ở: mọi trang (dev: include, không chép tay) -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-brand">
+      <img class="lockv" src="assets/img/logo-doc.png" alt="THVC Fund" width="170" height="183">
+      <p class="copy">© 2026 THVC Fund</p>
+    </div>
+    <div class="ftr-info">
+      <div class="ftr-name">
+        <p><strong>CÔNG TY CỔ PHẦN QUỸ ĐẦU TƯ MẠO HIỂM <span class="nw">TỈNH THANH HÓA</span></strong></p>
+        <p class="en">THANH HOA VENTURE CAPITAL FUND <span class="nw">JOINT STOCK COMPANY</span></p>
+      </div>
+      <dl class="ftr-facts">
+        <div><dt>Trụ sở chính</dt><dd>561–565 Quang Trung, phường Hạc Thành, tỉnh Thanh Hóa 40143, Việt Nam</dd></div>
+        <div><dt>Mã số doanh nghiệp</dt><dd>2803242560</dd></div>
+        <div><dt>Website</dt><dd><a href="http://quydautu.thanhhoa.gov.vn">quydautu.thanhhoa.gov.vn</a></dd></div>
+      </dl>
+    </div>
+    <div class="warn">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17h.01"/></svg>
+      <div>THVC Fund không kêu gọi góp vốn từ công chúng và không cam kết lợi nhuận. Hãy cảnh giác với mọi lời mời đầu tư mạo danh Quỹ qua mạng xã hội, điện thoại hoặc tin nhắn.</div>
+    </div>
+  </div>
+</footer>
+<!-- ▲ HẾT DÙNG CHUNG: FOOTER -->
+
+<!-- ▼ DÙNG CHUNG: NÚT LÊN ĐẦU TRANG · bản gốc: partials/to-top.html · dùng ở: mọi trang (dev: include, không chép tay) -->
+<button class="to-top" type="button" aria-label="Lên đầu trang">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+<!-- ▲ HẾT DÙNG CHUNG: NÚT LÊN ĐẦU TRANG -->
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

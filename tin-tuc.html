@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tin tức · THVC Fund</title>
+<meta name="description" content="Tin tức hoạt động của THVC Fund: hoạt động Quỹ, dự án đầu tư, đối tác và thông báo.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tin tức · THVC Fund">
+<meta property="og:description" content="Tin tức hoạt động của THVC Fund: hoạt động Quỹ, dự án đầu tư, đối tác và thông báo.">
+<meta property="og:image" content="assets/img/logo-bieu-tuong.png">
+<link rel="icon" type="image/png" href="assets/img/logo-bieu-tuong.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Be+Vietnam+Pro:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap">
+<!-- Thứ tự CSS: biến → giao diện v09 → thành phần v10 → thang cỡ chữ -->
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/type-scale.css">
+</head>
+<body class="subpage">
+
+<!-- ▼ DÙNG CHUNG: HEADER · bản gốc: partials/header.html · dùng ở: mọi trang (dev: include, không chép tay) -->
+<a class="skip" href="#main">Bỏ qua tới nội dung chính</a>
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="THVC Fund — Trang chủ"><img src="assets/img/logo-ngang.png" alt="THVC Fund — Quỹ Đầu tư mạo hiểm tỉnh Thanh Hóa" width="167" height="50"></a>
+    <nav class="nav" id="nav" aria-label="Điều hướng chính">
+    <ul class="nav-list">
+      <li class="ni has-sub">
+        <button class="nt" type="button" aria-expanded="false" aria-controls="sm-1">Về THVC <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        <ul class="sub-menu" id="sm-1">
+          <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+          <li><a href="mo-hinh.html">Mô hình</a></li>
+          <li><a href="he-sinh-thai.html">Hệ sinh thái</a></li>
+        </ul>
+      </li>
+      <li class="ni has-sub">
+        <button class="nt" type="button" aria-expanded="false" aria-controls="sm-2">Đầu tư <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        <ul class="sub-menu" id="sm-2">
+          <li><a href="linh-vuc.html">Lĩnh vực</a></li>
+          <li><a href="quy-trinh.html">Quy trình</a></li>
+          <li><a href="lo-trinh.html">Lộ trình</a></li>
+        </ul>
+      </li>
+      <li class="ni has-sub">
+        <button class="nt" type="button" aria-expanded="false" aria-controls="sm-3">Công bố thông tin <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        <ul class="sub-menu" id="sm-3">
+          <li><a href="cong-bo-thong-tin.html">Công bố của Quỹ</a></li>
+          <li><a href="van-ban-phap-ly.html">Văn bản pháp lý</a></li>
+        </ul>
+      </li>
+      <li class="ni has-sub is-active">
+        <button class="nt" type="button" aria-expanded="false" aria-controls="sm-4">Hoạt động <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        <ul class="sub-menu" id="sm-4">
+          <li><a href="tin-tuc.html" aria-current="page">Tin tức</a></li>
+          <li><a href="su-kien.html">Sự kiện</a></li>
+        </ul>
+      </li>
+      <li class="ni"><a class="nt" href="lien-he.html">Liên hệ</a></li>
+    </ul>
+    </nav>
+    <div class="hdr-actions">
+      <a class="btn btn-gold" href="dang-ky.html"><span class="lbl-full">Đề xuất đầu tư</span><span class="lbl-short">Gửi hồ sơ</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <button class="nav-toggle" type="button" aria-controls="nav" aria-expanded="false" aria-label="Mở menu"><svg class="i-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+  </div>
+</header>
+<!-- ▲ HẾT DÙNG CHUNG: HEADER -->
+
+<main id="main">
+
+<!-- ▼ THÀNH PHẦN: ĐẦU TRANG CON -->
+<section class="phdr">
+  <div class="wrap">
+    <nav aria-label="Đường dẫn"><ol class="crumbs"><li><a href="index.html">Trang chủ</a></li><li><span aria-current="page">Hoạt động</span></li><li><span aria-current="page">Tin tức</span></li></ol></nav>
+    <p class="eyebrow">Hoạt động</p>
+    <h1 class="display">Tin tức</h1>
+    <p class="lead">Hoạt động của Quỹ, dự án đầu tư, đối tác và thông báo.</p>
+  </div>
+</section>
+<!-- ▲ HẾT: ĐẦU TRANG CON -->
+
+<!-- ▼ THÀNH PHẦN: HOẠT ĐỘNG — TIN TỨC (khuôn K3, một khối) · ADMIN cập nhật: 2 tin nổi bật · tin mới nhất · danh sách đầy đủ (chuyên mục, ảnh, ngày, tiêu đề, tóm tắt) -->
+<section class="sec white" data-block="tin-noi-bat" aria-labelledby="hd-title">
+  <div class="wrap">
+    <p class="eyebrow rv">Tin nổi bật</p>
+    <h2 class="display rv" id="hd-title" style="color:var(--navy)">Mới nhất từ Quỹ</h2>
+    <div class="act-grid">
+      <div class="act-feat">
+      <a class="ncard" href="tin-tuc-chi-tiet.html">
+        <div class="thumb" style="background-image:url('assets/img/anh-quang-truong.jpg')" role="img" aria-label="Ảnh minh họa"></div>
+        <div class="nbody">
+          <div class="meta"><span class="tag">Hoạt động Quỹ</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>05/11/2026</span></div>
+          <h3>Tiêu đề tin mẫu về hoạt động nổi bật mới nhất của Quỹ <span class="demo">Mẫu</span></h3>
+          <p>Đoạn tóm tắt mẫu 2–3 dòng cho biết tin nói về việc gì. Admin thay bằng nội dung thật.</p>
+        </div>
+      </a>
+      <a class="ncard" href="tin-tuc-chi-tiet.html">
+        <div class="thumb" style="background-image:url('assets/img/anh-cao-toc.jpg')" role="img" aria-label="Ảnh minh họa"></div>
+        <div class="nbody">
+          <div class="meta"><span class="tag">Dự án đầu tư</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>28/10/2026</span></div>
+          <h3>Tiêu đề tin mẫu về một dự án Quỹ vừa rót vốn <span class="demo">Mẫu</span></h3>
+          <p>Tóm tắt mẫu: tên doanh nghiệp, lĩnh vực, hình thức đầu tư.</p>
+        </div>
+      </a>
+      </div>
+      <aside class="act-side" aria-label="Tin mới nhất">
+        <h3 class="side-h">Tin mới nhất</h3>
+        <ul class="act-list" tabindex="0" aria-label="Danh sách tin mới nhất (cuộn để xem thêm)">
+        <li><a href="tin-tuc-chi-tiet.html"><span class="th" style="background-image:url('assets/img/anh-cang-bien.jpg')" role="img" aria-label="Ảnh minh họa"></span><span class="tx"><b>Tiêu đề tin mẫu về ký kết hợp tác với đối tác</b><span class="meta">Đối tác · 20/10/2026</span></span></a></li>
+        <li><a href="tin-tuc-chi-tiet.html"><span class="th" style="background-image:url('assets/img/anh-dai-lo.jpg')" role="img" aria-label="Ảnh minh họa"></span><span class="tx"><b>Tiêu đề thông báo mẫu của Quỹ</b><span class="meta">Thông báo · 15/10/2026</span></span></a></li>
+        <li><a href="tin-tuc-chi-tiet.html"><span class="th" style="background-image:url('assets/img/anh-cao-toc.jpg')" role="img" aria-label="Ảnh minh họa"></span><span class="tx"><b>Tiêu đề tin mẫu về buổi làm việc với doanh nghiệp khởi nghiệp</b><span class="meta">Hoạt động Quỹ · 08/10/2026</span></span></a></li>
+        <li><a href="tin-tuc-chi-tiet.html"><span class="th" style="background-image:url('assets/img/anh-quang-truong.jpg')" role="img" aria-label="Ảnh minh họa"></span><span class="tx"><b>Tiêu đề tin mẫu về một khoản thoái vốn</b><span class="meta">Thoái vốn · 01/10/2026</span></span></a></li>
+        <li><a href="tin-tuc-chi-tiet.html"><span class="th" style="background-image:url('assets/img/anh-cang-bien.jpg')" role="img" aria-label="Ảnh minh họa"></span><span class="tx"><b>Tiêu đề thông báo mẫu về tiếp nhận hồ sơ đề xuất đầu tư</b><span class="meta">Thông báo · 25/09/2026</span></span></a></li>
+        <li><a href="tin-tuc-chi-tiet.html"><span class="th" style="background-image:url('assets/img/anh-dai-lo.jpg')" role="img" aria-label="Ảnh minh họa"></span><span class="tx"><b>Tiêu đề tin mẫu về chương trình làm việc với sở, ngành</b><span class="meta">Hoạt động Quỹ · 18/09/2026</span></span></a></li>
+        <li><a href="tin-tuc-chi-tiet.html"><span class="th" style="background-image:url('assets/img/anh-cao-toc.jpg')" role="img" aria-label="Ảnh minh họa"></span><span class="tx"><b>Tiêu đề tin mẫu về hợp tác với quỹ đầu tư khác</b><span class="meta">Đối tác · 10/09/2026</span></span></a></li>
+        <li><a href="tin-tuc-chi-tiet.html"><span class="th" style="background-image:url('assets/img/anh-quang-truong.jpg')" role="img" aria-label="Ảnh minh họa"></span><span class="tx"><b>Tiêu đề tin mẫu về đợt khảo sát doanh nghiệp khởi nghiệp</b><span class="meta">Hoạt động Quỹ · 02/09/2026</span></span></a></li>
+        </ul>
+        <a class="act-all" href="#danh-sach-tin">Xem tất cả tin tức <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </aside>
+    </div>
+    <p class="demo-note">Tin mẫu. Admin tick "nổi bật" cho 2 tin; các tin tiếp theo tự lấy theo ngày (khoảng 8–10 tin, cột tự có thanh cuộn khi dài). Chưa đủ 2 tin nổi bật thì lấy tin mới nhất bù vào.</p>
+    <!-- ▼ PHẦN 2 (cùng khối): DANH SÁCH ĐẦY ĐỦ -->
+    <div class="part2">
+    <p class="eyebrow" id="danh-sach-tin">Lưu trữ</p>
+    <h2 class="display" style="color:var(--navy)">Tất cả tin tức</h2>
+    <div class="filters" data-filter="news-list">
+      <div class="fchips" role="group" aria-label="Lọc theo chuyên mục"><button class="fchip" type="button" data-value="all" aria-pressed="true">Tất cả</button><button class="fchip" type="button" data-value="hoat-dong" aria-pressed="false">Hoạt động Quỹ</button><button class="fchip" type="button" data-value="du-an" aria-pressed="false">Dự án đầu tư</button><button class="fchip" type="button" data-value="doi-tac" aria-pressed="false">Đối tác</button><button class="fchip" type="button" data-value="thong-bao" aria-pressed="false">Thông báo</button></div>
+      <label class="fsearch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input type="search" placeholder="Tìm tin" aria-label="Tìm tin"></label>
+    </div>
+    <p class="count" data-count="news-list" aria-live="polite"></p>
+    <div class="news" id="news-list">
+    <a class="ncard" href="tin-tuc-chi-tiet.html" data-cat="hoat-dong">
+      <div class="thumb" style="background-image:url('assets/img/anh-quang-truong.jpg')" role="img" aria-label="Ảnh minh họa"></div>
+      <div class="nbody">
+        <div class="meta"><span class="tag">Hoạt động Quỹ</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>05/11/2026</span></div>
+        <h3>Tiêu đề tin mẫu về hoạt động của Quỹ, độ dài khoảng hai dòng <span class="demo">Mẫu</span></h3>
+        <p>Đoạn tóm tắt mẫu 1–2 câu cho biết tin nói về việc gì. Admin thay bằng nội dung thật.</p>
+      </div>
+    </a>
+    <a class="ncard" href="tin-tuc-chi-tiet.html" data-cat="du-an">
+      <div class="thumb" style="background-image:url('assets/img/anh-cao-toc.jpg')" role="img" aria-label="Ảnh minh họa"></div>
+      <div class="nbody">
+        <div class="meta"><span class="tag g">Dự án đầu tư</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>28/10/2026</span></div>
+        <h3>Tiêu đề tin mẫu về một dự án Quỹ đã đầu tư <span class="demo">Mẫu</span></h3>
+        <p>Tóm tắt mẫu: tên doanh nghiệp, lĩnh vực, hình thức đầu tư.</p>
+      </div>
+    </a>
+    <a class="ncard" href="tin-tuc-chi-tiet.html" data-cat="doi-tac">
+      <div class="thumb" style="background-image:url('assets/img/anh-cang-bien.jpg')" role="img" aria-label="Ảnh minh họa"></div>
+      <div class="nbody">
+        <div class="meta"><span class="tag">Đối tác</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>20/10/2026</span></div>
+        <h3>Tiêu đề tin mẫu về ký kết hợp tác với đối tác <span class="demo">Mẫu</span></h3>
+        <p>Tóm tắt mẫu: đối tác, nội dung hợp tác, ý nghĩa với hệ sinh thái.</p>
+      </div>
+    </a>
+    <a class="ncard" href="tin-tuc-chi-tiet.html" data-cat="thong-bao">
+      <div class="thumb" style="background-image:url('assets/img/anh-dai-lo.jpg')" role="img" aria-label="Ảnh minh họa"></div>
+      <div class="nbody">
+        <div class="meta"><span class="tag g">Thông báo</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>15/10/2026</span></div>
+        <h3>Tiêu đề thông báo mẫu của Quỹ <span class="demo">Mẫu</span></h3>
+        <p>Tóm tắt mẫu: đối tượng cần biết, thời hạn, đầu mối liên hệ.</p>
+      </div>
+    </a>
+    <a class="ncard" href="tin-tuc-chi-tiet.html" data-cat="hoat-dong">
+      <div class="thumb" style="background-image:url('assets/img/anh-cao-toc.jpg')" role="img" aria-label="Ảnh minh họa"></div>
+      <div class="nbody">
+        <div class="meta"><span class="tag">Hoạt động Quỹ</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>08/10/2026</span></div>
+        <h3>Tiêu đề tin mẫu về buổi làm việc với doanh nghiệp khởi nghiệp <span class="demo">Mẫu</span></h3>
+        <p>Tóm tắt mẫu 1–2 câu.</p>
+      </div>
+    </a>
+    <a class="ncard" href="tin-tuc-chi-tiet.html" data-cat="du-an">
+      <div class="thumb" style="background-image:url('assets/img/anh-quang-truong.jpg')" role="img" aria-label="Ảnh minh họa"></div>
+      <div class="nbody">
+        <div class="meta"><span class="tag g">Thoái vốn</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>01/10/2026</span></div>
+        <h3>Tiêu đề tin mẫu về một khoản thoái vốn <span class="demo">Mẫu</span></h3>
+        <p>Tóm tắt mẫu: khoản đầu tư, hình thức thoái vốn.</p>
+      </div>
+    </a>
+    <a class="ncard" href="tin-tuc-chi-tiet.html" data-cat="thong-bao">
+      <div class="thumb" style="background-image:url('assets/img/anh-cang-bien.jpg')" role="img" aria-label="Ảnh minh họa"></div>
+      <div class="nbody">
+        <div class="meta"><span class="tag">Thông báo</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>25/09/2026</span></div>
+        <h3>Tiêu đề thông báo mẫu về tiếp nhận hồ sơ đề xuất đầu tư <span class="demo">Mẫu</span></h3>
+        <p>Tóm tắt mẫu 1–2 câu.</p>
+      </div>
+    </a>
+    </div>
+    <div class="empty" data-empty="news-list"><b>Chưa có tin trong chuyên mục này</b>Mời bạn xem các chuyên mục khác.</div>
+    <nav class="pager" aria-label="Phân trang"><a href="#" aria-label="Trang trước">‹</a><span aria-current="page">1</span><a href="#">2</a><a href="#">3</a><a href="#" aria-label="Trang sau">›</a></nav>
+    <p class="demo-note">Tin mẫu. Admin đăng tin thật: ảnh 16:9, tiêu đề tối đa khoảng 90 ký tự, tóm tắt 1–2 câu.</p>
+    </div>
+    <!-- ▲ HẾT PHẦN 2 -->
+  </div>
+</section>
+<!-- ▲ HẾT: HOẠT ĐỘNG — TIN TỨC (khuôn K3, một khối) -->
+
+<!-- ▼ THÀNH PHẦN: DẢI TIẾP THEO -->
+<section class="next">
+  <div class="wrap">
+    <a href="su-kien.html"><span><small>Tiếp theo</small><b>Sự kiện</b></span><span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+  </div>
+</section>
+<!-- ▲ HẾT: DẢI TIẾP THEO -->
+
+</main>
+
+<!-- ▼ DÙNG CHUNG: FOOTER · bản gốc: partials/footer.html · dùng ở: mọi trang (dev: include, không chép tay) -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-brand">
+      <img class="lockv" src="assets/img/logo-doc.png" alt="THVC Fund" width="170" height="183">
+      <p class="copy">© 2026 THVC Fund</p>
+    </div>
+    <div class="ftr-info">
+      <div class="ftr-name">
+        <p><strong>CÔNG TY CỔ PHẦN QUỸ ĐẦU TƯ MẠO HIỂM <span class="nw">TỈNH THANH HÓA</span></strong></p>
+        <p class="en">THANH HOA VENTURE CAPITAL FUND <span class="nw">JOINT STOCK COMPANY</span></p>
+      </div>
+      <dl class="ftr-facts">
+        <div><dt>Trụ sở chính</dt><dd>561–565 Quang Trung, phường Hạc Thành, tỉnh Thanh Hóa 40143, Việt Nam</dd></div>
+        <div><dt>Mã số doanh nghiệp</dt><dd>2803242560</dd></div>
+        <div><dt>Website</dt><dd><a href="http://quydautu.thanhhoa.gov.vn">quydautu.thanhhoa.gov.vn</a></dd></div>
+      </dl>
+    </div>
+    <div class="warn">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17h.01"/></svg>
+      <div>THVC Fund không kêu gọi góp vốn từ công chúng và không cam kết lợi nhuận. Hãy cảnh giác với mọi lời mời đầu tư mạo danh Quỹ qua mạng xã hội, điện thoại hoặc tin nhắn.</div>
+    </div>
+  </div>
+</footer>
+<!-- ▲ HẾT DÙNG CHUNG: FOOTER -->
+
+<!-- ▼ DÙNG CHUNG: NÚT LÊN ĐẦU TRANG · bản gốc: partials/to-top.html · dùng ở: mọi trang (dev: include, không chép tay) -->
+<button class="to-top" type="button" aria-label="Lên đầu trang">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+<!-- ▲ HẾT DÙNG CHUNG: NÚT LÊN ĐẦU TRANG -->
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
